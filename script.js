@@ -7,8 +7,8 @@ let courses = [
         professor: "Dr. Jennifer Walsh",
         department: "NSCI",
         level: 300,
-        overallDifficulty: 3.8,
-        assignmentDifficulty: 3.5,
+        overallDifficulty: 1.0,
+        assignmentDifficulty: 1.2,
         examDifficulty: null, // No exams
         gradeDistribution: {
             "A+": 96,
@@ -27,16 +27,16 @@ let courses = [
         reviews: [
             {
                 id: 1,
-                overallDiff: 4,
-                assignmentDiff: 3,
+                overallDiff: 1.5,
+                assignmentDiff: 1,
                 examDiff: null,
                 text: "Great foundational course! The active learning format really helps you understand cellular neuroscience. Professor Walsh is excellent at explaining complex concepts.",
                 date: "2024-01-12"
             },
             {
                 id: 2,
-                overallDiff: 3,
-                assignmentDiff: 3,
+                overallDiff: 0.9,
+                assignmentDiff: 0.7,
                 examDiff: null,
                 text: "Challenging but very well structured. The teamwork components are helpful and the course builds a solid foundation for advanced neuroscience courses.",
                 date: "2024-01-08"
@@ -50,8 +50,8 @@ let courses = [
         professor: "Dr. Michael Thompson",
         department: "NSCI",
         level: 300,
-        overallDifficulty: 3.5,
-        assignmentDifficulty: 3.2,
+        overallDifficulty: 1.3,
+        assignmentDifficulty: 1.2,
         examDifficulty: null, // No exams
         gradeDistribution: {
             "A+": 96,
@@ -70,16 +70,16 @@ let courses = [
         reviews: [
             {
                 id: 3,
-                overallDiff: 4,
-                assignmentDiff: 3,
+                overallDiff: 1,
+                assignmentDiff: 0.8,
                 examDiff: null,
                 text: "Fascinating course! The scientific approach to psychedelics is really eye-opening. Professor Thompson presents the material in a balanced, evidence-based way.",
                 date: "2024-01-14"
             },
             {
                 id: 4,
-                overallDiff: 3,
-                assignmentDiff: 3,
+                overallDiff: 1.2,
+                assignmentDiff: 1.4,
                 examDiff: null,
                 text: "Very interesting content about therapeutic applications. The course covers both historical context and current research. Highly recommend for anyone interested in neuroscience and mental health.",
                 date: "2024-01-11"
