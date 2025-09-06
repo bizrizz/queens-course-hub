@@ -10,6 +10,7 @@ let courses = [
         overallDifficulty: 1.0,
         assignmentDifficulty: 1.2,
         examDifficulty: null, // No exams
+        lastUpdated: "2025 Winter",
         gradeDistribution: {
             "A+": 96,
             "A": 2,
@@ -53,6 +54,7 @@ let courses = [
         overallDifficulty: 1.3,
         assignmentDifficulty: 1.2,
         examDifficulty: null, // No exams
+        lastUpdated: "2025 Winter",
         gradeDistribution: {
             "A+": 96,
             "A": 2,
@@ -259,7 +261,7 @@ function openCourseModal(courseId) {
     document.getElementById('examDifficultyText').textContent = course.examDifficulty ? getDifficultyText(course.examDifficulty) : 'N/A';
     
     // Render grade distribution if available
-    renderGradeDistribution(course.gradeDistribution);
+    renderGradeDistribution(course.gradeDistribution, course);
     
     // Render reviews
     renderReviews(course.reviews);
@@ -275,7 +277,7 @@ function updateDifficultyBar(elementId, difficulty) {
 }
 
 // Render grade distribution
-function renderGradeDistribution(gradeDistribution) {
+function renderGradeDistribution(gradeDistribution, course) {
     const container = document.getElementById('gradeDistribution');
     if (!container) return;
     
@@ -321,6 +323,7 @@ function renderGradeDistribution(gradeDistribution) {
                     </defs>
                 </svg>
             </div>
+            <div class="last-updated">Last updated: ${course.lastUpdated || 'Unknown'}</div>
         </div>
     `;
 }
